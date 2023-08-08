@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to SCKAN-Compare’s documentation! &mdash; SCKAN-Compare  documentation</title>
+  <title>Basic Usage &mdash; SCKAN-Compare  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,7 @@
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction" href="introduction.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -30,7 +29,7 @@
 
           
           
-          <a href="#" class="icon icon-home">
+          <a href="index.html" class="icon icon-home">
             SCKAN-Compare
               <img src="_static/logo.png" class="logo" alt="Logo"/>
           </a>
@@ -46,7 +45,6 @@
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html#skcan-compare">SKCAN-Compare</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="basic.html">Basic Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="webapp.html">Web App</a></li>
 <li class="toctree-l1"><a class="reference internal" href="code_of_conduct.html">Contributor Covenant Code of Conduct</a></li>
 </ul>
@@ -57,17 +55,17 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">SCKAN-Compare</a>
+          <a href="index.html">SCKAN-Compare</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Welcome to SCKAN-Compare’s documentation!</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Basic Usage</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/basic.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -75,41 +73,37 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-sckan_compare">
-<span id="welcome-to-sckan-compare-s-documentation"></span><h1>Welcome to SCKAN-Compare’s documentation!<a class="headerlink" href="#module-sckan_compare" title="Permalink to this heading"></a></h1>
-<p>A package for retrieving and visualizing data contained in SCKAN
-(e.g., across species, relationship to spinal segments) to highlight
-similarities and differences in neuronal pathways</p>
-<p>License: Apache License 2.0</p>
-</section>
-<section id="contents">
-<h1>Contents<a class="headerlink" href="#contents" title="Permalink to this heading"></a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html#skcan-compare">SKCAN-Compare</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="basic.html">Basic Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="webapp.html">Web App</a></li>
-<li class="toctree-l1"><a class="reference internal" href="code_of_conduct.html">Contributor Covenant Code of Conduct</a></li>
-</ul>
+  <section id="basic-usage">
+<h1>Basic Usage<a class="headerlink" href="#basic-usage" title="Permalink to this heading"></a></h1>
+<p>The functionality of the Python module can be accessed via the following classes:</p>
+<ol class="arabic simple">
+<li><p>SckanCompare</p></li>
+<li><p>Visualizer</p></li>
+<li><p>SimpleVisualizer</p></li>
+</ol>
+<p>Detailed examples are available via the Jupyter notebook tutorials.
+Here, we show a few example code snippets of their usage:</p>
+<p>You can import each of the classes via:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sckan_compare</span> <span class="kn">import</span> <span class="n">SckanCompare</span>
+<span class="kn">from</span> <span class="nn">sckan_compare.visualize</span> <span class="kn">import</span> <span class="n">Visualizer</span>
+<span class="kn">from</span> <span class="nn">sckan_compare.simplevis</span> <span class="kn">import</span> <span class="n">SimpleVisualizer</span>
+</pre></div>
 </div>
-</section>
-<section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
+<p>You can execute a SPARQL quey via:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">execute_query</span><span class="p">(</span><span class="o">&lt;&lt;</span><span class="n">query</span> <span class="n">string</span><span class="o">&gt;&gt;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Simple block plot can be created via:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">simvis</span> <span class="o">=</span> <span class="n">SimpleVisualizer</span><span class="p">()</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">simvis</span><span class="o">.</span><span class="n">plot_figure</span><span class="p">(</span><span class="n">result_df</span><span class="p">,</span> <span class="n">selected_Region_A</span><span class="p">,</span> <span class="n">selected_Region_B</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 

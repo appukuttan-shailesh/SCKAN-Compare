@@ -8,7 +8,7 @@ environments -- for more explanations see the respective instructions below.
 
 Standard install
 ----------------
-We recommend installing Brian into a separate "virtual environment", see the
+We recommend installing into a separate "virtual environment", see the
 `Python Packaging User Guide <https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/>`_
 for more information.
 SCKAN-Compare is included in the PyPI package index: https://pypi.org/project/SCKAN-compare/

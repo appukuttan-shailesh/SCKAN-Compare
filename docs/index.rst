@@ -6,7 +6,7 @@
 Welcome to SCKAN-Compare's documentation!
 =========================================
 
-.. automodule:: SCKAN_compare
+.. automodule:: sckan_compare
 
 
 Contents
@@ -18,6 +18,8 @@ Contents
 
    introduction
    installation
+   basic
+   webapp
    code_of_conduct
 
 

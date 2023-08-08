@@ -11,7 +11,7 @@ Standard install
 We recommend installing Brian into a separate "virtual environment", see the
 `Python Packaging User Guide <https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/>`_
 for more information.
-sckan-Compare is included in the PyPI package index: https://pypi.org/project/sckan-compare/
+SCKAN-Compare is included in the PyPI package index: https://pypi.org/project/SCKAN-compare/
 You can therefore install it with the ``pip`` utility::
 
    pip install sckan-compare
@@ -23,7 +23,7 @@ have to install ``pip`` via::
 
 Development install
 -------------------
-If you wish to contribute to the development of sckan-Compare, the easiest way of setting up your environment
+If you wish to contribute to the development of SCKAN-Compare, the easiest way of setting up your environment
 would be as follows::
 
    git clone https://github.com/SPARC-FAIR-Codeathon/2023-team-4

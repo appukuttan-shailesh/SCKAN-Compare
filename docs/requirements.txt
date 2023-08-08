@@ -1,0 +1,3 @@
+# for getting docs to work on readthedocs
+sphinx
+myst_parser
